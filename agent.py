@@ -6,9 +6,6 @@ from langchain_core.output_parsers import StrOutputParser
 from uagents import Agent, Model, Context
 from uagents.setup import fund_agent_if_low
 import re
-from together import Together
-
-client = Together()
 
 class DeepSeekRequest(Model):
     context:str
